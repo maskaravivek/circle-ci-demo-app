@@ -24,6 +24,6 @@ platform :android do
   desc "Deploy a new version to the Google Play"
   lane :deploy do
     gradle(task: "clean bundleRelease")
-    upload_to_play_store(track: 'internal', json_key_data: ENV["GCLOUD_SERVICE_KEY"])
+    upload_to_play_store(track: 'internal', release_status: 'draft', json_key_data: ENV["GCLOUD_SERVICE_KEY"])
   end
 end
