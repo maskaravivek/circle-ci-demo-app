@@ -33,6 +33,6 @@ platform :android do
   desc "Deploy a new version to the Google Play"
   lane :deploy do
     gradle(task: "clean assembleRelease")
-    upload_to_play_store(json_key_data: ENV["GCLOUD_SERVICE_KEY"])
+    upload_to_play_store(track: 'internal', json_key_data: ENV["GCLOUD_SERVICE_KEY"])
   end
 end
