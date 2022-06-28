@@ -120,12 +120,12 @@ jobs:
           command: |
             cd ~/demo-react-native/android/app && openssl aes-256-cbc -d -in keystore.jks.encrypted -k $ANDROID_ENCRYPT_SECRET_KEY >> keystore.jks
 
-      - run:
-          name: fastlane tests
-          command: |
-            mkdir -p test-results/fastlane
-            bundle exec fastlane test
-            mv fastlane/report.xml test-results/fastlane
+      # - run:
+      #     name: fastlane tests
+      #     command: |
+      #       mkdir -p test-results/fastlane
+      #       bundle exec fastlane test
+      #       mv fastlane/report.xml test-results/fastlane
       - run:
           name: fastlane deploy
           command: |
