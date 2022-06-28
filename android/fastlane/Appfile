@@ -1,2 +1,2 @@
-json_key_file("") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+json_key_file("/Users/vivekmaskara/Downloads/api-5276365902853364760-837358-872bc1db4afb.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
 package_name("com.maskaravivek.demorn") # e.g. com.krausefx.app
